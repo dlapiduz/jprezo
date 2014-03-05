@@ -1,0 +1,21 @@
+<h1>{{ .title }}</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{ range .results }}
+          <tr>
+            <td>{{.Title}}</td>
+            <td>
+                <span class="glyphicon glyphicon-edit"></span>
+                <span class="glyphicon glyphicon-remove"></span>
+            </td>
+          </tr>
+        {{ end }}
+    </tbody>
+</table>

@@ -1,0 +1,14 @@
+{
+  "development": {
+    "driver": "mymysql",
+    "source": "jprezo_dev/root/"
+  },
+  "production": {
+    "driver": "mymysql",
+    "source": "jprezo_dev/root/"
+  },
+  "test": {
+    "driver": "mymysql",
+    "source": "jprezo_dev/root/"
+  }
+}

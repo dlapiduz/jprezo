@@ -1,0 +1,15 @@
+<h1>{{ .title }}</h1>
+
+{{ range .presentation }}
+<form role="form" action="#" method="POST">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="name" class="form-control" id="title" placeholder="Presentation Title" value="{{ .Title }}">
+  </div>
+  <div class="form-group">
+    <label for="body">Body</label>
+    <textarea id="body" class="form-control" placeholder="Your Presentation">{{ .Body }}</textarea>
+  </div>
+  <button type="submit" class="btn btn-default">Save</button>
+</form>
+{{ end }}
